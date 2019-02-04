@@ -15,37 +15,45 @@
   <script defer="defer" src="./Components/Header/header.js" async></script>
   <script defer="defer" src="./Components/NavBar/NavBar.js" async></script>
 
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-
-  
-     
   <div class="container home">
+    <!--Background Nav Images-->
     <header>
-      <!--Navigation Bar Here-->
-      <h1 class="header">Guidr</h1>
-      <nav>
-        <a href="#">Home</a>
-        <a href="#">Sign In</a>
-        <a href="#">Register</a>
-        <a href="#">Contact Us</a>
-      </nav>
-      <!--Nav Bar Images-->
-      <div class="nav-images">
-        <img src="./Images/daylight-daytime-grass-808465.jpg" alt="picture of mountains" class="nav-bar-1">
-        <img src="./Images/adventure-backpacker-climb-1365425.jpg" alt="picture of hikers on mountain" class="nav-bar-2">
+      <!--Social Media Icons + Buttons-->
+      <div class="icons-login">
+        <nav class="icons">
+            <a href="#" class="icon style2 fa-facebook"><span class="label">Twitter</span></a>
+            <i class="fab fa-facebook-f"></i>
+            <a href="#" class="icon style2 fa-pinterest"><span class="label">Instagram</span></a>
+            <a href="#" class="icon style2 fa-youtube"><span class="label">Youtube</span></a>
+        </nav>
+        <button class="login">Sign In</button>
       </div>
-      <div class="opacity">
-          <div class="top-opacity"></div>
-          <div class="middle-opacity"></div>
-          <div class="low-opacity"></div>
+      <div class="logo-nav">
+        <img src="./Images/logo_with_name.png" alt="Logo of Guidr" class="home-page-logo">
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Offers</a>
+          <a href="#">Contact</a>
+        </nav>
+        <input type="text" placeholder="Search..">
       </div>
     </header>
-   
+    <section class="login-card">
+        <h2 class="join-us">Join Us</h2>
+        <div class="contact-card">
+            <p>Email</p>
+            <p>Sign Up</p>
+            <p>Register</p>
+        </div>
+    </section>
+
+    <section class="content-destination">
+    </section>
     <section class="cards">
         <h2 class="trip-title"></h2>
     </section>
