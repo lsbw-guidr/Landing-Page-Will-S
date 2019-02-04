@@ -126,9 +126,111 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-.icons-login {
-  display: flex;
-  justify-content: space-between;
-  max-height: 3rem;
-  padding: 2% 0;
+.login {
+  margin: 20% 16%;
+  background-color: white;
+  border-radius: 8px;
+  color: #000000;
+  box-shadow: 1px 1px #4A4A4A;
+  border: 0;
+  font-family: Rubik;
+}
+header {
+  max-width: 1024px;
+  margin: 0 auto;
+  max-height: 5rem;
+  display: grid;
+  grid-template-columns: 36% auto 8.5% 5% 14.5%;
+  background-color: #661FFF;
+}
+header .home-page-logo {
+  height: 5rem;
+}
+header .nav-bar {
+  margin: 9% 0%;
+}
+header nav a {
+  text-decoration: none;
+  font-family: Rubik;
+  color: white;
+  font-size: 0.75rem;
+  margin: 0 4%;
+}
+header input {
+  background-color: #661FFF;
+  height: 1.5rem;
+  margin: 34% 0%;
+  border: 0;
+  color: #661FFF;
+}
+header .fa-search {
+  color: white;
+  margin: 67% 0%;
+}
+.card-content {
+  display: grid;
+  grid-template-columns: 15% 15% 15% 25% 30%;
+  grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+  max-width: 1000px;
+  margin: 4rem auto;
+}
+.card-content .card-1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 8;
+}
+.card-content .card-2 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 9;
+  grid-row-end: 10;
+}
+.card-content .card-2 h3 {
+  display: none;
+}
+.card-content .card-2 .content {
+  display: none;
+}
+.card-content .card-3 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 9;
+  grid-row-end: 10;
+}
+.card-content .card-3 h3 {
+  display: none;
+}
+.card-content .card-3 .content {
+  display: none;
+}
+.card-content .card-4 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 9;
+  grid-row-end: 10;
+}
+.card-content .card-4 h3 {
+  display: none;
+}
+.card-content .card-4 .content {
+  display: none;
+}
+.card-content .card-5 {
+  grid-column-start: 4;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+.card-content .card-6 {
+  grid-column-start: 4;
+  grid-column-end: 4;
+  grid-row-start: 6;
+  grid-row-end: 10;
+}
+.card-content .card-7 {
+  grid-column-start: 5;
+  grid-column-end: 5;
+  grid-row-start: 5;
+  grid-row-end: 9;
 }
