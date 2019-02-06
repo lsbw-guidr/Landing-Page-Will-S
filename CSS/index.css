@@ -127,7 +127,7 @@ table {
   border-spacing: 0;
 }
 .login {
-  margin: 20% 16%;
+  margin: 19% 8%;
   background-color: white;
   border-radius: 8px;
   color: #000000;
@@ -135,10 +135,11 @@ table {
   border: 0;
   font-family: Rubik;
   cursor: pointer;
+  padding: 6% 20%;
 }
 @media (max-width: 500px) {
   .login {
-    padding: 6%;
+    padding: 6% 23%;
   }
 }
 .login:hover {
