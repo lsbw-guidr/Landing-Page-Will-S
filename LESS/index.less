@@ -75,7 +75,7 @@
         @media (max-width: 500px) {
             display: none;
         }
-        
+
         .image-box {
             grid-column-start: 1;
             grid-column-end: 11;
@@ -430,8 +430,7 @@
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-rows: 50% 10% 10% 20% 10%;
-        max-width: 100%;
-      
+        max-width: 100%;      
 
         h3 {
             grid-column-start: 1;
@@ -521,9 +520,6 @@
         grid-template-rows: 50% 10% 10% 20% 10%;
         max-width: 100%;
 
-        
-        
-
         h3 {
             grid-column-start: 1;
             grid-column-end: 3;
@@ -592,19 +588,7 @@
         }
         
         .read-more {
-            display: none;
-        }
-
-        @media (max-width: 500px) {
-            .read-more {
-                grid-column-start: 1;
-                grid-column-end: 3;
-                grid-row-start: 5;
-                grid-row-end: 6;
-                margin: 1% auto;
-                margin: 1% auto;
-                padding: 0px 30px;
-            }
+            visibility: hidden;
         }
     }
 
@@ -726,21 +710,52 @@
             font-family: Rubik;
         }
 
+        .password-form {
+            margin-right: -29%;
+        }
+
         input {
             color: lightgrey;
             display: block;
             width: 48%;
         }
 
-        // #pass {
-        //     margin-left: 17.5%;
-        //     color: lightgrey;
-        // }
-
         input.read-more {
             margin: 7% 27%;
             color: white;
             border-radius: 17px;
+        }
+
+        input.read-more:hover {
+            background-color: white;
+            color: @guidr-black;
+        }
+
+        @media (max-width: 500px) {
+            h2 {
+                margin: 6% 40% 9%;
+                font-weight: bold;
+                font-size: 1.5rem;
+            }
+
+            form {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                margin: 15px 10px;
+                font-family: Rubik;
+            }
+
+            input {
+                color: lightgrey;
+                display: block;
+                width: 69%;
+            }
+
+            .password-form {
+                margin-right: -17%;
+            }
         }
     }
 
@@ -758,9 +773,8 @@
     
         .icons {
             color: @guidr-blue;
+            cursor: pointer;
         }
     }
     
 }
-
-

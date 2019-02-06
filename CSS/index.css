@@ -141,6 +141,10 @@ table {
     padding: 6%;
   }
 }
+.login:hover {
+  background-color: #F5A623;
+  color: #000000;
+}
 .read-more {
   height: 2rem;
   margin: 13% 8%;
@@ -152,6 +156,10 @@ table {
   font-family: Rubik;
   cursor: pointer;
 }
+.read-more:hover {
+  background-color: #F5A623;
+  color: #000000;
+}
 header {
   max-width: 1024px;
   margin: 0 auto;
@@ -159,6 +167,7 @@ header {
   display: grid;
   grid-template-columns: 36% auto 8.5% 5% 14.5%;
   background-color: #661FFF;
+  box-shadow: 0px 2px #4A4A4A;
 }
 header .menu {
   display: none;
@@ -178,6 +187,9 @@ header nav a {
   color: white;
   font-size: 0.75rem;
   margin: 0 4%;
+}
+header nav a:hover {
+  color: #000000;
 }
 header input {
   background-color: #661FFF;
@@ -220,16 +232,22 @@ header .fa-search {
     display: none;
     position: fixed;
     background-color: #661FFF;
-    border: 1px solid white;
+    border: 1px solid #F5A623;
     border-left: none;
     border-bottom: none;
     z-index: 2;
+    margin: 17% 20%;
   }
   header .menu ul li {
     list-style-type: none;
-    font-size: 32px;
-    padding: 30px 0;
+    font-size: 1.25rem;
+    padding: 0.5rem 5rem;
     text-align: center;
+    cursor: pointer;
+    color: white;
+  }
+  header .menu ul li:hover {
+    color: #F5A623;
   }
   header .menu--open {
     display: block;
@@ -734,17 +752,7 @@ header .fa-search {
   overflow: hidden;
 }
 .card-content .card-6 .read-more {
-  display: none;
-}
-@media (max-width: 500px) {
-  .card-content .card-6 .read-more {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 5;
-    grid-row-end: 6;
-    margin: 1% auto;
-    padding: 0px 30px;
-  }
+  visibility: hidden;
 }
 .card-content .card-7 {
   grid-column-start: 5;
@@ -848,6 +856,9 @@ header .fa-search {
   margin: 15px 10px;
   font-family: Rubik;
 }
+.card-content .registration-form .password-form {
+  margin-right: -29%;
+}
 .card-content .registration-form input {
   color: lightgrey;
   display: block;
@@ -857,6 +868,33 @@ header .fa-search {
   margin: 7% 27%;
   color: white;
   border-radius: 17px;
+}
+.card-content .registration-form input.read-more:hover {
+  background-color: white;
+  color: #000000;
+}
+@media (max-width: 500px) {
+  .card-content .registration-form h2 {
+    margin: 6% 40% 9%;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  .card-content .registration-form form {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 15px 10px;
+    font-family: Rubik;
+  }
+  .card-content .registration-form input {
+    color: lightgrey;
+    display: block;
+    width: 69%;
+  }
+  .card-content .registration-form .password-form {
+    margin-right: -17%;
+  }
 }
 .card-content .footer {
   grid-column-start: 1;
@@ -872,4 +910,5 @@ header .fa-search {
 }
 .card-content .footer .icons {
   color: #661FFF;
+  cursor: pointer;
 }
