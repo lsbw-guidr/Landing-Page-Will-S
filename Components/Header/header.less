@@ -8,6 +8,14 @@ header {
     grid-template-columns: 36% auto 8.5% 5% 14.5%;
     background-color: #661FFF;
 
+    .menu {
+        display: none;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
     .home-page-logo {
         height: 5rem;
         }
@@ -35,5 +43,67 @@ header {
     .fa-search {
         color: white;
         margin: 67% 0%;
+    }
+}
+
+@media (max-width: 500px) {
+    header {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 100%;
+        align-items: center;
+        justify-content: center;
+
+        .home-page-logo {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 1;
+            height: 5rem;
+        }
+
+        .menu-button {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 1;
+            display: block;
+            left: 20px;
+            cursor: pointer;
+            justify-content: center;
+            margin: 0 35%;
+        }
+          
+        .menu {
+            display: none;
+            position: fixed;
+            background-color: @guidr-blue;
+            border: 1px solid white;
+            border-left: none;
+            border-bottom: none;
+            z-index: 2; 
+        }
+        
+        .menu ul li{
+            list-style-type: none;
+            font-size: 32px;
+            padding: 30px 0;
+            text-align: center;
+        }
+        
+        .menu--open {
+            display: block;
+        }
+
+        input {
+            display: none;
+        }
+        
+        .fa-search {
+            display: none;
+        }
+        .nav-bar {
+            display: none;
+        }
     }
 }

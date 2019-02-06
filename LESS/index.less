@@ -38,6 +38,26 @@
         color: @guidr-blue;
     }
 
+    @media (max-width: 500px) {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        
+        .footer {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 3% auto;
+        }
+        .icons {
+            margin: 3% 10%;
+        }
+        .fa-user-circle {
+            color: @guidr-blue;
+        }
+    }
+
+
+    
+
     .card-1 {
         grid-column-start: 1;
         grid-column-end: 4;
@@ -46,12 +66,16 @@
         border-bottom: 1px solid lightgrey;
         border-right: 1px solid lightgrey;
         padding-right: 6%;
-
+    
         display: grid;
         grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
         grid-template-rows: 35% 10% 10% 25% 20%;
         max-width: 100%;
 
+        @media (max-width: 500px) {
+            display: none;
+        }
+        
         .image-box {
             grid-column-start: 1;
             grid-column-end: 11;
@@ -141,6 +165,10 @@
         grid-template-rows: 15% 55% 15%;
         max-width: 100%;
 
+        @media (max-width: 500px) {
+            display: none;
+        }
+
         h3 {
             display: none;
         }
@@ -224,6 +252,10 @@
         grid-template-columns: 40% 10% 50%;
         grid-template-rows: 15% 55% 15%;
         max-width: 100%;
+
+        @media (max-width: 500px) {
+            display: none;
+        }
 
         h3 {
             display: none;
@@ -309,6 +341,10 @@
         grid-template-columns: 40% 10% 50%;
         grid-template-rows: 15% 55% 15%;
         max-width: 100%;
+
+        @media (max-width: 500px) {
+            display: none;
+        }
 
         h3 {
             display: none;
@@ -484,6 +520,8 @@
         grid-template-columns: 50% 50%;
         grid-template-rows: 50% 10% 10% 20% 10%;
         max-width: 100%;
+
+        
         
 
         h3 {
@@ -555,6 +593,18 @@
         
         .read-more {
             display: none;
+        }
+
+        @media (max-width: 500px) {
+            .read-more {
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row-start: 5;
+                grid-row-end: 6;
+                margin: 1% auto;
+                margin: 1% auto;
+                padding: 0px 30px;
+            }
         }
     }
 
@@ -711,7 +761,6 @@
         }
     }
     
-
 }
 
 
