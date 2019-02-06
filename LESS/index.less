@@ -29,13 +29,21 @@
 .card-content {
     display: grid;
     grid-template-columns: 15% 15% 15% 25% 30%;
-    grid-template-rows: 10% 10% 10% 10% 10% 10%;
+    // grid-template-rows: repeat(6, 1fr);
     max-width: 1000px;
     margin: 2rem auto;
     font-family: Rubik;
 
     .fa-user-circle {
         color: @guidr-blue;
+    }
+
+    .hide {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 6;
+        grid-row-end: 11;
+        display: none;
     }
 
     @media (max-width: 500px) {
@@ -62,14 +70,14 @@
         grid-column-start: 1;
         grid-column-end: 4;
         grid-row-start: 1;
-        grid-row-end: 3;
+        grid-row-end: 4;
         border-bottom: 1px solid lightgrey;
         border-right: 1px solid lightgrey;
         padding-right: 6%;
     
         display: grid;
         grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
-        grid-template-rows: 35% 10% 10% 25% 20%;
+        grid-template-rows: 45% 10% 10% 15% 20%;
         max-width: 100%;
 
         @media (max-width: 500px) {
@@ -694,6 +702,7 @@
         color: @guidr-black;
         font-size: .75rem;
         margin: 0 .25rem 3rem;
+        box-shadow: 1px 2.5px lightgrey;
         
         h2 {
             margin: 6% 33% 9%;
