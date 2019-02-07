@@ -859,11 +859,6 @@ header .fa-search {
   max-width: 100%;
   max-height: 70%;
 }
-@media (max-width: 500px) {
-  .card-content .container-two .card-7 {
-    margin-bottom: -25%;
-  }
-}
 .card-content .container-two .card-7 h3 {
   grid-column-start: 1;
   grid-column-end: 3;
@@ -871,7 +866,6 @@ header .fa-search {
   grid-row-end: 4;
   margin: 3% 0;
   font-size: 0.9rem;
-  overflow: hidden;
   line-height: 1.5;
 }
 .card-content .container-two .card-7 .content {
@@ -944,7 +938,6 @@ header .fa-search {
     grid-template-rows: 50% 10% 10% 20% 10%;
     max-width: 100%;
     max-height: 70%;
-    margin-bottom: -25%;
   }
   .card-content .container-two .card-8 h3 {
     grid-column-start: 1;
@@ -953,7 +946,6 @@ header .fa-search {
     grid-row-end: 4;
     margin: 3% 0;
     font-size: 0.9rem;
-    overflow: hidden;
     line-height: 1.5;
   }
   .card-content .container-two .card-8 .content {
@@ -1027,7 +1019,6 @@ header .fa-search {
     grid-template-rows: 50% 10% 10% 20% 10%;
     max-width: 100%;
     max-height: 70%;
-    margin-bottom: -25%;
   }
   .card-content .container-two .card-9 h3 {
     grid-column-start: 1;
@@ -1036,7 +1027,6 @@ header .fa-search {
     grid-row-end: 4;
     margin: 3% 0;
     font-size: 0.9rem;
-    overflow: hidden;
     line-height: 1.5;
   }
   .card-content .container-two .card-9 .content {
