@@ -177,7 +177,8 @@ header .menu-button {
   display: none;
 }
 header .home-page-logo {
-  height: 5rem;
+  height: 4.75rem;
+  margin: 0 11%;
 }
 header .nav-bar {
   margin: 9% 0%;
@@ -267,18 +268,11 @@ header .fa-search {
   display: grid;
   grid-template-columns: 15% 15% 15% 25% 30%;
   max-width: 1000px;
-  margin: 2rem auto;
+  margin: 2% auto;
   font-family: Rubik;
 }
 .card-content .fa-user-circle {
   color: #661FFF;
-}
-.card-content .hide {
-  grid-column-start: 1;
-  grid-column-end: 6;
-  grid-row-start: 6;
-  grid-row-end: 11;
-  display: none;
 }
 @media (max-width: 500px) {
   .card-content {
@@ -300,14 +294,10 @@ header .fa-search {
 .card-content .card-1 {
   grid-column-start: 1;
   grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 4;
   border-bottom: 1px solid lightgrey;
-  border-right: 1px solid lightgrey;
-  padding-right: 6%;
+  margin: 0 5%;
   display: grid;
-  grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
-  grid-template-rows: 45% 10% 10% 15% 20%;
+  grid-template-columns: 20% 20% 20% 20% 20%;
   max-width: 100%;
 }
 @media (max-width: 500px) {
@@ -317,76 +307,92 @@ header .fa-search {
 }
 .card-content .card-1 .image-box {
   grid-column-start: 1;
-  grid-column-end: 11;
-  grid-row-start: 1;
-  grid-row-end: 1;
+  grid-column-end: 6;
   position: relative;
   overflow: hidden;
   max-height: 16rem;
 }
 .card-content .card-1 h3 {
   grid-column-start: 1;
-  grid-column-end: 7;
-  grid-row-start: 2;
-  grid-row-end: 2;
-  margin-left: 0.5rem;
-  margin-top: 0.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  grid-column-end: 4;
+  margin: 4% 0;
+  font-size: 0.95rem;
 }
 .card-content .card-1 .author {
-  grid-column-start: 7;
-  grid-column-end: 11;
-  grid-row-start: 2;
-  grid-row-end: 2;
-  margin-top: 0.5rem;
+  grid-column-start: 4;
+  grid-column-end: 6;
   display: flex;
+  margin: 6%;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
 }
 .card-content .card-1 .fa-user-circle {
-  margin-right: 0.5rem;
+  margin: 0 3%;
+  font-size: 1.25rem;
+}
+.card-content .card-1 .full-name {
+  font-size: 0.75rem;
+  color: grey;
 }
 .card-content .card-1 .date-box {
   grid-column-start: 1;
-  grid-column-end: 6;
-  grid-row-start: 3;
-  grid-row-end: 3;
-  margin-left: 0.5rem;
+  grid-column-end: 3;
   display: flex;
   align-items: center;
+  font-size: 0.6rem;
+  background-color: lightgrey;
+  margin: 0 19% 5%;
+  padding: 3%;
   justify-content: center;
 }
-.card-content .card-1 .location {
-  grid-column-start: 6;
-  grid-column-end: 11;
-  grid-row-start: 3;
-  grid-row-end: 3;
+.card-content .card-1 .fa-clock {
+  padding-right: 2%;
+}
+.card-content .card-1 .data-box {
+  grid-column-start: 3;
+  grid-column-end: 4;
   display: flex;
   align-items: center;
+  font-size: 0.6rem;
+  background-color: lightgrey;
+  margin: 0 -1% 10%;
+  padding: 3%;
   justify-content: center;
+}
+.card-content .card-1 .fa-comments {
+  padding-right: 2%;
+}
+.card-content .card-1 .location-box {
+  grid-column-start: 4;
+  grid-column-end: 6;
+  display: flex;
+  align-items: center;
+  font-size: 0.6rem;
+  background-color: lightgrey;
+  margin: 0 28% 5%;
+  padding: 2%;
+  justify-content: center;
+}
+.card-content .card-1 .fa-map-pin {
+  padding-right: 6%;
 }
 .card-content .card-1 .content {
   grid-column-start: 1;
-  grid-column-end: 10;
-  grid-row-start: 4;
-  grid-row-end: 4;
-  margin-left: 0.5rem;
+  grid-column-end: 6;
+  margin-top: 4%;
   font-size: 0.75rem;
-  overflow: hidden;
+  line-height: 1.7;
+  color: grey;
 }
-.card-content .card-1 button {
+.card-content .card-1 .read-more {
   grid-column-start: 1;
-  grid-column-end: 5;
-  grid-row-start: 5;
-  grid-row-end: 5;
+  grid-column-end: 3;
+  margin: 20% 10%;
+  font-size: medium;
 }
 .card-content .card-2 {
   grid-column-start: 1;
   grid-column-end: 1;
-  grid-row-start: 4;
-  grid-row-end: 5;
   margin-top: 1rem;
   display: grid;
   grid-template-columns: 40% 10% 50%;
@@ -461,8 +467,6 @@ header .fa-search {
 .card-content .card-3 {
   grid-column-start: 2;
   grid-column-end: 2;
-  grid-row-start: 4;
-  grid-row-end: 5;
   margin-top: 1rem;
   display: grid;
   grid-template-columns: 40% 10% 50%;
@@ -537,8 +541,6 @@ header .fa-search {
 .card-content .card-4 {
   grid-column-start: 3;
   grid-column-end: 3;
-  grid-row-start: 4;
-  grid-row-end: 5;
   border-right: 1px solid lightgrey;
   margin-top: 1rem;
   display: grid;
@@ -614,8 +616,6 @@ header .fa-search {
 .card-content .card-5 {
   grid-column-start: 4;
   grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 4;
   font-size: 0.75rem;
   margin: 0 1.25rem;
   border-bottom: 1px solid lightgrey;
@@ -688,8 +688,6 @@ header .fa-search {
 .card-content .card-6 {
   grid-column-start: 4;
   grid-column-end: 4;
-  grid-row-start: 4;
-  grid-row-end: 6;
   font-size: 0.75rem;
   margin: 0 1.25rem;
   border-bottom: 1px solid lightgrey;
@@ -760,6 +758,68 @@ header .fa-search {
 }
 .card-content .card-6 .read-more {
   visibility: hidden;
+}
+.card-content .registration-form {
+  grid-column-start: 5;
+  grid-column-end: 5;
+  background-color: #F5A623;
+  color: #000000;
+  font-size: 0.75rem;
+  margin: 0 0.25rem 3rem;
+  box-shadow: 1px 2.5px lightgrey;
+}
+.card-content .registration-form h2 {
+  margin: 6% 33% 9%;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.card-content .registration-form form {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 15px 10px;
+  font-family: Rubik;
+}
+.card-content .registration-form .password-form {
+  margin-right: -29%;
+}
+.card-content .registration-form input {
+  color: lightgrey;
+  display: block;
+  width: 48%;
+}
+.card-content .registration-form input.read-more {
+  margin: 7% 27%;
+  color: white;
+  border-radius: 17px;
+}
+.card-content .registration-form input.read-more:hover {
+  background-color: white;
+  color: #000000;
+}
+@media (max-width: 500px) {
+  .card-content .registration-form h2 {
+    margin: 6% 40% 9%;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  .card-content .registration-form form {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 15px 10px;
+    font-family: Rubik;
+  }
+  .card-content .registration-form input {
+    color: lightgrey;
+    display: block;
+    width: 69%;
+  }
+  .card-content .registration-form .password-form {
+    margin-right: -17%;
+  }
 }
 .card-content .card-7 {
   grid-column-start: 5;
@@ -840,75 +900,9 @@ header .fa-search {
   margin: 1% auto;
   padding: 0px 30px;
 }
-.card-content .registration-form {
+.card-content .footer {
   grid-column-start: 5;
   grid-column-end: 5;
-  grid-row-start: 1;
-  grid-row-end: 3;
-  background-color: #F5A623;
-  color: #000000;
-  font-size: 0.75rem;
-  margin: 0 0.25rem 3rem;
-  box-shadow: 1px 2.5px lightgrey;
-}
-.card-content .registration-form h2 {
-  margin: 6% 33% 9%;
-  font-weight: bold;
-  font-size: 1.5rem;
-}
-.card-content .registration-form form {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 15px 10px;
-  font-family: Rubik;
-}
-.card-content .registration-form .password-form {
-  margin-right: -29%;
-}
-.card-content .registration-form input {
-  color: lightgrey;
-  display: block;
-  width: 48%;
-}
-.card-content .registration-form input.read-more {
-  margin: 7% 27%;
-  color: white;
-  border-radius: 17px;
-}
-.card-content .registration-form input.read-more:hover {
-  background-color: white;
-  color: #000000;
-}
-@media (max-width: 500px) {
-  .card-content .registration-form h2 {
-    margin: 6% 40% 9%;
-    font-weight: bold;
-    font-size: 1.5rem;
-  }
-  .card-content .registration-form form {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 15px 10px;
-    font-family: Rubik;
-  }
-  .card-content .registration-form input {
-    color: lightgrey;
-    display: block;
-    width: 69%;
-  }
-  .card-content .registration-form .password-form {
-    margin-right: -17%;
-  }
-}
-.card-content .footer {
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 5;
-  grid-row-end: 5;
   color: #000000;
   font-size: 1.25rem;
   font-weight: bold;
