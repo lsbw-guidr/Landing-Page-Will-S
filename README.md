@@ -1,2 +1,2 @@
 # Landing-Page-Will-S-
-Landing Page for Will Schulz
+https://guidr-ui-will-schulz.netlify.com/
